@@ -65,4 +65,17 @@ public class Matriz {
         ret += "]\n";
         return ret;
     }
+    public static Matriz invertirMatriz(Matriz a) {
+
+        int filasA = a.getDimension().width;
+        int columnasA = a.getDimension().height, i, j;
+
+        Matriz matrizResultante = new Matriz(filasA, columnasA, false);
+        for (i = 0; i < columnasA; i++) {
+            for (j = 0; j < filasA; j++) {
+                matrizResultante.datos[i][j] = a.datos[j][i];
+            }
+        }
+        return matrizResultante;
+    }
 }
