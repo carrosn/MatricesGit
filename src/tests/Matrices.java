@@ -17,7 +17,7 @@ public class Matrices {
         } catch (DimensionesIncompatibles ex) {
             ex.printStackTrace();
         }
-        
+       System.out.println("**************Multiplicar Matrices*****************");
        Matriz m11 = new Matriz(3, 2, true);
         System.out.println(m11);
         Matriz m21 = new Matriz(2, 3, true);
