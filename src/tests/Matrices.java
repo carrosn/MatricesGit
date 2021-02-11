@@ -17,8 +17,18 @@ public class Matrices {
         } catch (DimensionesIncompatibles ex) {
             ex.printStackTrace();
         }
-        System.out.println("***********Invertir Matrices***************");
-        System.out.println(Matriz.invertirMatriz(m1));
+
+       System.out.println("**************Multiplicar Matrices*****************");
+       Matriz m11 = new Matriz(3, 2, true);
+        System.out.println(m11);
+        Matriz m21 = new Matriz(2, 3, true);
+        System.out.println(m21);
+        try {
+            System.out.println(Matriz.multiplicarDosMatrices(m11, m21));
+        } catch (DimensionesIncompatibles ex) {
+            ex.printStackTrace();
+        }
+
     }
     
 }
